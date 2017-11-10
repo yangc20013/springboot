@@ -21,7 +21,6 @@ public class UserController {
     @RequestMapping("/get")
     @ResponseBody
     public JSONArray getAll() {
-    	
     	JSONArray users = userService.getAll();
         if(users!=null){
             logger.info(users.toJSONString());
