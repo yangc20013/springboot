@@ -1,0 +1,8 @@
+int add(int a, int b ) {
+	print("--------bsh add log--------");
+    return a + b;
+}
+int sub(int a, int b ) {
+	print("--------bsh sub log--------");
+    return a - b;
+}
