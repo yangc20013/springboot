@@ -9,7 +9,22 @@ import org.springframework.boot.context.embedded.EmbeddedServletContainerCustomi
 @EnableAutoConfiguration
 @SpringBootApplication
 public class DemoApplication implements EmbeddedServletContainerCustomizer{
-
+//	CREATE TABLE `user_logout` (
+//			   `id` int(11) NOT NULL AUTO_INCREMENT,
+//			   `username` varchar(50) DEFAULT NULL,
+//			   `created_by` varchar(50) DEFAULT NULL,
+//			   `created_time` datetime DEFAULT NULL,
+//			   PRIMARY KEY (`id`)
+//			 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+//	CREATE TABLE `account` (
+//			   `id` int(11) NOT NULL AUTO_INCREMENT,
+//			   `email` varchar(255) DEFAULT NULL,
+//			   `password` varchar(255) DEFAULT NULL,
+//			   `username` varchar(255) DEFAULT NULL,
+//			   PRIMARY KEY (`id`)
+//			 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8
+			 
+			 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
