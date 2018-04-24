@@ -10,7 +10,7 @@ import com.springboot.entity.User;
 
 @Repository
 public interface  UserRepository extends CrudRepository<User, Long> {
-	@Query("select a from User a left join a.roles r where r.name = 'ADMIN'")
+	@Query("select a from User a")
 	List<User> findUser();
 	
 //	@Query("select r from CachedMtdPerformanceDataDtvds r where r.hrId = ?1 and r.firstDate = ?2 order by r.ach desc")
